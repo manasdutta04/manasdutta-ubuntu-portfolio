@@ -1,6 +1,6 @@
 module.exports = {
   basePath: '',
-  assetPrefix: '',
+  assetPrefix: '/manas-linux-portfolio',
   output: 'export',
   images: {
     unoptimized: true
