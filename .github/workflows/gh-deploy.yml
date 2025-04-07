@@ -45,3 +45,4 @@ jobs:
           branch: gh-pages
           folder: out
           clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
