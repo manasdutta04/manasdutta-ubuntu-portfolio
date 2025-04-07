@@ -32,7 +32,6 @@ jobs:
       - name: Building and Exporting 🏗️
         run: |
           npm run build
-          [ -d out ] || mkdir out
           touch out/.nojekyll
         env:
           NEXT_PUBLIC_TRACKING_ID: G-8FBXBFXC10
