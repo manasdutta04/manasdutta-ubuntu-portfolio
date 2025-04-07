@@ -2,12 +2,14 @@
   "name": "manasdutta04-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://manasdutta04.github.io/",
+  "homepage": "https://manasdutta.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": ">=16.x"
