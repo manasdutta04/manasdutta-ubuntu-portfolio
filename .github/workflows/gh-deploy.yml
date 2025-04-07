@@ -28,7 +28,7 @@ jobs:
       - name: Installing Packages 🥁
         run: yarn install
 
-      - name: Building 🧱
+      - name: Building and Exporting 🧱
         run: yarn build
         env:
           NEXT_PUBLIC_TRACKING_ID: G-8FBXBFXC10
@@ -36,9 +36,8 @@ jobs:
           NEXT_PUBLIC_TEMPLATE_ID: template_2ni69n8
           NEXT_PUBLIC_USER_ID: user_Do31sKneP4eYfn5n1nLTD
 
-      - name: Exporting Bundle Files 🎪
-        run: yarn export
-      - run: touch ./out/.nojekyll
+      - name: Create .nojekyll file
+        run: touch ./out/.nojekyll
 
       - name: Deploy to Github-Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5

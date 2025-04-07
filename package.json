@@ -1,15 +1,14 @@
 {
-  "name": "manasdutta04-portfolio",
+  "name": "manasdutta.github.io",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://manasdutta.github.io/",
+  "homepage": "https://manasdutta.github.io",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "export": "next export",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "touch out/.nojekyll && gh-pages -d out -t true"
   },
   "engines": {
     "node": ">=16.x"

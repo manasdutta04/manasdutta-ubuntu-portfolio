@@ -1,4 +1,8 @@
 module.exports = {
-  basePath: '/manasdutta.github.io',
-  assetPrefix: '/manasdutta.github.io/',
+  basePath: '',
+  assetPrefix: '',
+  output: 'export',
+  images: {
+    unoptimized: true
+  }
 };
