@@ -39,6 +39,7 @@ jobs:
         run: |
           npm run build
           touch out/.nojekyll
+          cp out/404.html out/index.html
         env:
           NEXT_PUBLIC_TRACKING_ID: "G-8FBXBFXC10"
           NEXT_PUBLIC_SERVICE_ID: "service_qt4ryip"
